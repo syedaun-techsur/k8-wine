@@ -297,7 +297,7 @@ CREATE TABLE IF NOT EXISTS bottles (
 - **P3** — Low. Nice-to-have; explicitly out of scope for this MVP.
 
 **Out-of-Scope (for reference):**
-Authentication, multi-user support, image uploads, tasting notes, ratings, import/export, pagination, AI recommendations, Docker/docker-compose.
+Authentication, multi-user support, image uploads, tasting notes, ratings, import/export, pagination, AI recommendations, Docker/docker-compose, quantity-zero deletion nudge (suggest delete when quantity reaches 0 — post-MVP UX enhancement).
 
 ---
 

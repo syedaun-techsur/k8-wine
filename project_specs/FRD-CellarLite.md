@@ -301,10 +301,12 @@ This document specifies the detailed functional behaviour of all eight PRD featu
 - `name` (string, **required**): Updated bottle name. Must not be blank after trimming.
 - `vintage` (integer, optional): Updated vintage year. Rules identical to F01.
 - `varietal` (string, optional): Updated varietal. Rules identical to F01.
-- `quantity` (integer, optional): Updated quantity. Must be ≥ 0 (allow 0 to record "finished" bottles); defaults preserved if absent.
+- `quantity` (integer, optional): Updated quantity. Must be ≥ 0 (allow 0 to record "finished" bottles). If absent from the request body, treated as `null` (full replacement — see F05 PUT semantics).
 - `location` (string, optional): Updated location. Rules identical to F01.
 
 > **Note on quantity:** Edit allows `quantity = 0` (bottle "finished") while Add requires `quantity ≥ 1`. This lets the user record that they've consumed the last bottle without deleting the record.
+>
+> **Full replacement:** `PUT /api/bottles/[id]` replaces all five editable fields. The edit form must always include all current field values in the request body, not only the changed ones. Absent optional fields are stored as `NULL`.
 
 ---
 
@@ -472,9 +474,11 @@ This document specifies the detailed functional behaviour of all eight PRD featu
 1. On page load, read `q` from URL query string.
 2. Render search `<input>` pre-populated with current `q` value (empty string if absent).
 3. User types in search input.
-4. On input change (or form submit): update URL to `/?q=<encoded-term>` and trigger page re-render.
-   - Implementation: use a Client Component with `router.push` / `router.replace`, or a plain HTML `<form method="GET">` submitting to `/`.
-   - The URL update causes the Server Component to re-fetch with the new `q`.
+4. On input change: after a debounce delay of ≤ 500 ms from the last keystroke, update the URL to `/?q=<encoded-term>` using `router.replace` and trigger a Server Component re-render.
+   - Implementation: a Client Component wraps the search `<input>`, applies a `useEffect`-based debounce (or equivalent), and calls `router.replace('/?q=<term>')`.
+   - `router.replace` (not `push`) is used so the search does not accumulate browser history entries.
+   - The URL update causes the Server Component to re-fetch with the new `q` — no full page reload, no separate API fetch from the client.
+   - Form-submit-only (Enter key / button) is **not** sufficient; results must update as the user types.
 5. Server Component receives `q` from `searchParams`.
 6. If `q` is absent or empty string → SQL: `SELECT * FROM bottles ORDER BY created_at DESC` (all rows).
 7. If `q` has a non-empty trimmed value → SQL: `SELECT * FROM bottles WHERE name ILIKE $1 ORDER BY created_at DESC` with `$1 = '%' + term + '%'`.
@@ -506,6 +510,7 @@ This document specifies the detailed functional behaviour of all eight PRD featu
 - SQL injection prevented by using a parameterised query (`$1` placeholder with `pg`). **Never** interpolate `q` directly into SQL string.
 - Whitespace-only `q` is treated equivalently to absent `q` (return all bottles).
 - Maximum query parameter length: 500 characters. Longer values are truncated to 500 before use.
+- **Search trigger:** Filtering is driven by debounce on the `<input>`'s `onChange` event (≤ 500 ms delay). A form-submit-only trigger (Enter key / button click) does NOT satisfy the real-time filtering requirement.
 
 ---
 
@@ -611,6 +616,8 @@ This document specifies the detailed functional behaviour of all eight PRD featu
 **Inputs — PUT /api/bottles/[id] (request body):**
 
 Same as POST except `quantity` may be `0` (record a "finished" bottle).
+
+> **Full replacement semantics:** The edit form always sends all five fields. The PUT handler performs a full column replacement — it does NOT merge with existing DB values. Optional fields absent from the request body (or explicitly `null`) overwrite the existing DB value with `NULL`. The UI is responsible for including current values in the payload for any field the user did not change.
 
 ---
 
@@ -1161,7 +1168,7 @@ Returns empty array `[]` when no bottles exist or no bottles match the search.
 | `name` | string | **Yes** | Non-empty after trim. Max 255 chars. |
 | `vintage` | integer \| null | No | Year in `[1800, currentYear+1]`. |
 | `varietal` | string \| null | No | Max 255 chars. |
-| `quantity` | integer | No | ≥ **0** (PUT allows finished bottles). Preserved at current DB value if absent. |
+| `quantity` | integer | No | ≥ **0** (PUT allows finished bottles). Absent or `null` → stored as `NULL` (full replacement). |
 | `location` | string \| null | No | Max 500 chars. |
 
 **Response — 200 OK:** Updated bottle object (same shape as GET response).
