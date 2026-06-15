@@ -1,7 +1,7 @@
 // app/api/bottles/route.ts
 import { NextRequest, NextResponse } from 'next/server';
-import pool from '../../lib/db';
-import type { Bottle, CreateBottleRequest } from '../../types/bottle';
+import pool from '@/lib/db';
+import type { Bottle, CreateBottleRequest } from '@/types/bottle';
 
 // ─── GET /api/bottles ─────────────────────────────────────────────────────────
 // Returns all bottles newest-first. Optional ?q= performs ILIKE name filter.
