@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import '@/styles/globals.css';
+import RouteAnnouncerOverride from '@/app/components/RouteAnnouncerOverride';
 
 export const metadata: Metadata = {
   title: 'CellarLite — My Wine Cellar',
@@ -39,6 +40,8 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        {/* Remove role="alert" from Next.js route announcer to avoid conflicts with form errors */}
+        <RouteAnnouncerOverride />
       </body>
     </html>
   );

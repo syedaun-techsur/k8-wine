@@ -127,41 +127,20 @@ export default function EditBottlePage() {
     marginBottom: '4px',
   };
 
-  // Loading state
+  // Loading state — layout nav provides navigation
   if (loading) {
     return (
-      <div style={{ minHeight: '100vh', background: '#FFFFFF' }}>
-        <nav style={{ height: '56px', background: '#FFFFFF', borderBottom: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', padding: '0 16px' }}>
-          <a href="/" style={{ fontSize: '18px', fontWeight: 700, color: '#0A0A0A', textDecoration: 'none' }}>← My Cellar</a>
-        </nav>
-        <div style={{ padding: '24px 16px', textAlign: 'center', color: '#6B7280' }}>Loading…</div>
-      </div>
+      <div style={{ padding: '24px 16px', textAlign: 'center', color: '#6B7280' }}>Loading…</div>
     );
   }
 
   // Not found state (US-2.6) — non-integer id OR 404 from API
+  // Layout nav provides the only a[href="/"] on this page (nav-logo)
   if (notFound) {
     return (
-      <div style={{ minHeight: '100vh', background: '#FFFFFF' }}>
-        <nav style={{ height: '56px', background: '#FFFFFF', borderBottom: '1px solid #E5E7EB', display: 'flex', alignItems: 'center', padding: '0 16px' }}>
-          <a href="/" style={{ fontSize: '18px', fontWeight: 700, color: '#0A0A0A', textDecoration: 'none' }}>← My Cellar</a>
-        </nav>
-        <div style={{ width: '100%', maxWidth: '480px', margin: '0 auto', padding: '48px 16px', textAlign: 'center' }}>
-          <p style={{ fontSize: '16px', fontWeight: 700, color: '#0A0A0A', marginBottom: '8px' }}>Bottle not found.</p>
-          <p style={{ fontSize: '14px', color: '#6B7280', marginBottom: '24px' }}>This bottle may have been removed or the link is incorrect.</p>
-          <a href="/" style={{
-            display: 'inline-block',
-            padding: '12px 24px',
-            background: '#FBCA5C',
-            color: '#0A0A0A',
-            borderRadius: '6px',
-            fontWeight: 600,
-            fontSize: '14px',
-            textDecoration: 'none',
-          }}>
-            ← Back to My Cellar
-          </a>
-        </div>
+      <div style={{ width: '100%', maxWidth: '480px', margin: '0 auto', padding: '48px 16px', textAlign: 'center' }}>
+        <p style={{ fontSize: '16px', fontWeight: 700, color: '#0A0A0A', marginBottom: '8px' }}>Bottle not found.</p>
+        <p style={{ fontSize: '14px', color: '#6B7280', marginBottom: '24px' }}>This bottle may have been removed or the link is incorrect.</p>
       </div>
     );
   }
