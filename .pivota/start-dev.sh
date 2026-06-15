@@ -30,14 +30,18 @@ if (( BASH_VERSINFO[0] < 4 )) || { (( BASH_VERSINFO[0] == 4 )) && (( BASH_VERSIN
 fi
 
 # === D-11.4: tee stdout/stderr to /tmp/pivota-dev.log AND pass through ===
+# Researcher resolved log destination: /tmp/pivota-dev.log (always writable,
+# matches existing convention). SSE chat panel sees output live AND a file
+# exists for scrollback / replay.
 mkdir -p /tmp
 exec > >(tee -a /tmp/pivota-dev.log) 2>&1
 echo "[pivota] $(date -Iseconds) start-dev.sh begin (catalog: react-next)"
 
 # === D-11.1 + D-11.2: per-stack 0.0.0.0 binding + host allowlist relaxation ===
-# HOSTNAME is honored by Next.js for the dev server bind address since v13.
 export HOSTNAME=0.0.0.0
 export HOST=0.0.0.0
+# HOSTNAME is honored by Next.js for the dev server bind address since v13.
+# HOST=0.0.0.0 is also exported for downstream tools that read $HOST.
 
 # === D-11.3: .env.example -> .env transitional copy (until Phase 38) ===
 if [[ ! -f .env && -f .env.example ]]; then
@@ -45,7 +49,8 @@ if [[ ! -f .env && -f .env.example ]]; then
   cp .env.example .env
 fi
 
-# === Pre-exec snippet: allowedDevOrigins overlay for sandbox preview iframe ===
+# === Optional pre-exec snippet: allowedDevOrigins overlay ===
+# Only patch if user's next.config doesn't already include allowedDevOrigins.
 for CFG in next.config.mjs next.config.js next.config.ts; do
   if [[ -f "$CFG" ]]; then
     if ! grep -q "allowedDevOrigins" "$CFG" 2>/dev/null; then
