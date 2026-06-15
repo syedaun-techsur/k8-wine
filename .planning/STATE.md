@@ -3,7 +3,7 @@
 **Workflow Mode:** spec-express
 **Current Milestone:** v1
 **Status:** initialized
-**Last activity:** 2026-06-15 - UAT verified express task cellarlite-full-implementation-next-js-1 (77/77 passed, 2 fix cycles)
+**Last activity:** 2026-06-15 - Planning complete; ready to execute express task cellarlite-full-implementation-next-js-1 (execution state reset for a fresh run; prior completed build preserved at tag run1-complete / commit 0145ef0)
 
 ---
 
@@ -20,7 +20,6 @@ Spec documents were generated in `project_specs/` during initialization. Use `/p
 
 | # | Description | Date | Commit | UAT | Directory |
 |---|-------------|------|--------|-----|-----------|
-| cellarlite-full-implementation-next-js-1 | CellarLite Full Implementation — Next.js App Router wine cellar tracker | 2026-06-15 | 0a2fc82 | ✓ 77/77 | [cellarlite-full-implementation-next-js-1](./express/cellarlite-full-implementation-next-js-1/) |
 
 ## Blockers/Concerns
 
