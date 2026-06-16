@@ -135,7 +135,7 @@ export async function PUT(
        SET name = $1, vintage = $2, varietal = $3, quantity = $4, location = $5
        WHERE id = $6
        RETURNING *`,
-      [name, vintage, varietal, quantity, id]
+      [name, vintage, varietal, quantity, location, id]
     );
     if (result.rows.length === 0) {
       return NextResponse.json({ error: 'Not found' }, { status: 404 });
