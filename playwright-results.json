@@ -1,0 +1,3521 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/home/daytona/project/node_modules/.bin/playwright",
+      "test",
+      "e2e/uat/cellarlite-full-implementation-next-js-1.spec.ts"
+    ],
+    "configFile": "/home/daytona/project/playwright.config.ts",
+    "rootDir": "/home/daytona/project/e2e/uat",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/daytona/project/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/daytona/project/e2e/uat",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "playwright-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cellarlite-full-implementation-next-js-1.spec.ts",
+      "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "US-0.1: View Full Bottle List",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 49,
+          "column": 6,
+          "specs": [
+            {
+              "title": "navigating to / renders without login screen",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 153,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:51.933Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-603d9f25c4b1db6b4fd9",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 55,
+              "column": 7
+            },
+            {
+              "title": "each bottle shows name, vintage, varietal, quantity, and location",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 110,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-3380832274c58e8b7e55",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 64,
+              "column": 7
+            },
+            {
+              "title": "bottles are ordered newest-first (by created_at)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 95,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.244Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-4297927b1c7f42200d98",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 75,
+              "column": 7
+            },
+            {
+              "title": "page is server-rendered — list visible on initial load without spinner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 94,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.344Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-fae0f0dcf2b979939e1d",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 83,
+              "column": 7
+            },
+            {
+              "title": "page title or heading reads \"My Cellar\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.442Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-ec549abac3adc4d7f29e",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 91,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-0.2: View Empty-State When Cellar Has No Bottles",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 99,
+          "column": 6,
+          "specs": [
+            {
+              "title": "\"No bottles yet\" visible when cellar is empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.526Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-aeaf2b7b79fa19da0fae",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 104,
+              "column": 7
+            },
+            {
+              "title": "\"Add bottle\" button visible in empty state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.644Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-bcbc4888217f2c8ee744",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 109,
+              "column": 7
+            },
+            {
+              "title": "clicking \"Add bottle\" in empty state navigates to /bottles/new",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.726Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-a11cb5780a07728c1046",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 114,
+              "column": 7
+            },
+            {
+              "title": "no bottle rows rendered in empty state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 77,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.861Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-8500f325f4b9b14fc275",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 122,
+              "column": 7
+            },
+            {
+              "title": "empty-state message distinct from search-empty (no ?q= present)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 78,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:52.943Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-0b9b61e481da69ff4b70",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 127,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-0.3: Navigate to Edit Page from List Row",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 135,
+          "column": 6,
+          "specs": [
+            {
+              "title": "each bottle row is clickable and links to /bottles/[id]/edit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.026Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dc37643bc4e9a38feb94",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 141,
+              "column": 7
+            },
+            {
+              "title": "clicking a row navigates to correct edit page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dd270afcf9fcd0c36c11",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 148,
+              "column": 7
+            },
+            {
+              "title": "tap target for each row is at least 44px tall",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 94,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.245Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-20cf3d94393b90b60686",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 154,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-0.4: Navigate to Add Bottle from List Page",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 162,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Add bottle button visible regardless of empty/populated cellar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 110,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.344Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-ea14653df80365130ddf",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 163,
+              "column": 7
+            },
+            {
+              "title": "clicking Add bottle navigates to /bottles/new",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.460Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-13aa3eb7ee827796dbcc",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 175,
+              "column": 7
+            },
+            {
+              "title": "button tap target is at least 44x44px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 94,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-2de344e471e3dc4fd9d2",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 181,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-1.1: Add a New Bottle with All Fields",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 196,
+          "column": 6,
+          "specs": [
+            {
+              "title": "/bottles/new renders form with all fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-3b13dbb3b96b03480a1b",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 201,
+              "column": 7
+            },
+            {
+              "title": "each field has a visible label",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 78,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.777Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-036499c9ecf558e6e9fa",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 210,
+              "column": 7
+            },
+            {
+              "title": "submitting all fields creates bottle and redirects to /",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.860Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-019e1f5759495db3ddd8",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 219,
+              "column": 7
+            },
+            {
+              "title": "new bottle appears in list with all fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:53.993Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-470c6f06161522341282",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 230,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-1.2: Add a Bottle with Name Only",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 247,
+          "column": 6,
+          "specs": [
+            {
+              "title": "submitting only name succeeds and redirects to /",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 129,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.142Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dc924df6468db91526f4",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 252,
+              "column": 7
+            },
+            {
+              "title": "bottle appears in list with name shown and optional fields blank",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.276Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-044405d700de61dcc1ab",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 259,
+              "column": 7
+            },
+            {
+              "title": "quantity defaults to 1 when left blank",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 128,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.410Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-12dd6e31a09d2afed09d",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 267,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-1.3: Prevented from Submitting Without a Name",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 277,
+          "column": 6,
+          "specs": [
+            {
+              "title": "clicking submit with empty name shows \"Name is required\" error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 97,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.543Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-0850e04698e5380f2476",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 278,
+              "column": 7
+            },
+            {
+              "title": "error shown for whitespace-only name",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.644Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c574f067fa08638c096e",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 287,
+              "column": 7
+            },
+            {
+              "title": "other field values are preserved after failed validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 112,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.761Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-fc411e832f1c32ee8999",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 294,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-1.4: Cancel Adding a Bottle",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 304,
+          "column": 6,
+          "specs": [
+            {
+              "title": "\"Cancel\" link is visible on /bottles/new",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 63,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-addbf35f7148ffeccf5a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 305,
+              "column": 7
+            },
+            {
+              "title": "clicking Cancel navigates back to / without creating a record",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 128,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:54.944Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-e5b584fe3b5ed8edb852",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 310,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.1: Open Edit Page with Pre-Populated Fields",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 325,
+          "column": 6,
+          "specs": [
+            {
+              "title": "edit page shows all five fields pre-populated",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.076Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-923e599004a99251cd4a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 326,
+              "column": 7
+            },
+            {
+              "title": "each pre-populated field has a visible label",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 96,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-64bed5e22eb307e92c8d",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 344,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.2: Update Bottle Quantity",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 357,
+          "column": 6,
+          "specs": [
+            {
+              "title": "changing quantity from 3 to 2 and saving redirects to /",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 146,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.260Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c2fc7e5f4f7870d4fd90",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 358,
+              "column": 7
+            },
+            {
+              "title": "bottle list shows updated quantity after save",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.410Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-de626b45e340720cef7d",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 368,
+              "column": 7
+            },
+            {
+              "title": "quantity can be set to 0 (last bottle consumed)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 161,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.544Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-3215854926790b8c2ba4",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 380,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.3: Update Any Bottle Field",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 391,
+          "column": 6,
+          "specs": [
+            {
+              "title": "changing name reflects new name in list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.709Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-9092e436094870bc428a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 392,
+              "column": 7
+            },
+            {
+              "title": "changing location reflects new location in list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 144,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:55.861Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-17010ed765c14470f5a1",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 403,
+              "column": 7
+            },
+            {
+              "title": "updated values persist after page reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.009Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-be8816ef533019d442d5",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 414,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.4: Prevented from Saving Without a Name",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 428,
+          "column": 6,
+          "specs": [
+            {
+              "title": "clearing name and clicking save shows \"Name is required\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.192Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-6db9c61c4a8c76235d4b",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 429,
+              "column": 7
+            },
+            {
+              "title": "other field values preserved after failed save",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 130,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-38a36c8e8ca632ad167e",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 441,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.5: Cancel Editing a Bottle",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 452,
+          "column": 6,
+          "specs": [
+            {
+              "title": "\"Cancel\" link is visible on edit page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.462Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-d81cbfac38c409ad2392",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 453,
+              "column": 7
+            },
+            {
+              "title": "clicking Cancel navigates to / without saving changes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 144,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-4a53e013be4443d7aa49",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 461,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-2.6: Handle Navigation to Non-Existent Bottle",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 474,
+          "column": 6,
+          "specs": [
+            {
+              "title": "/bottles/99999/edit shows \"Bottle not found\" message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c1b56120947945b4723f",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 475,
+              "column": 7
+            },
+            {
+              "title": "link back to / visible on not-found page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.775Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-794f4434d3ba5fc46b7c",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 480,
+              "column": 7
+            },
+            {
+              "title": "/bottles/abc/edit also shows \"Bottle not found\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.859Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-cde2e2e1eaf151023954",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 487,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-3.1: Delete a Bottle with Confirmation",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 497,
+          "column": 6,
+          "specs": [
+            {
+              "title": "\"Delete\" button visible on edit page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 81,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:56.943Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-776890da338a585255e0",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 498,
+              "column": 7
+            },
+            {
+              "title": "clicking Delete + confirming dialog removes bottle and redirects to /",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 129,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.027Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-e78dab2a159ddc86ffbc",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 506,
+              "column": 7
+            },
+            {
+              "title": "deleted bottle does not reappear on page reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.161Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-27f65039a87ac28fb708",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 518,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-3.2: Cancel Deletion — No Change Made",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 531,
+          "column": 6,
+          "specs": [
+            {
+              "title": "cancelling delete dialog keeps user on edit page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 112,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-7eb0ce12e84f5c51f3fa",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 532,
+              "column": 7
+            },
+            {
+              "title": "bottle still appears in list after cancelled delete",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 129,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.443Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-62d137b6c64045338672",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 544,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-4.1: Search Bottles by Partial Name",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 561,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search input is rendered at the top of list page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 95,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.576Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-843b9e5172c519513fbe",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 569,
+              "column": 7
+            },
+            {
+              "title": "partial name search narrows the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 95,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.676Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-afa574c267f7ddd49d6e",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 574,
+              "column": 7
+            },
+            {
+              "title": "non-matching bottles are not shown",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.776Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-6b2410cb2d21ddc82a11",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 580,
+              "column": 7
+            },
+            {
+              "title": "URL updates to include ?q= when search is active",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 863,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:57.859Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-4bef7ead7438fe5ddd61",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 585,
+              "column": 7
+            },
+            {
+              "title": "search input pre-populated with current ?q= on page load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 96,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:58.726Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-f79c572d745e7b0c0dc1",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 593,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-4.2: Search Is Case-Insensitive",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 601,
+          "column": 6,
+          "specs": [
+            {
+              "title": "searching \"caymus\" finds bottle named \"Caymus\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 78,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:58.826Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-ff75a4f80b99cecaed66",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 607,
+              "column": 7
+            },
+            {
+              "title": "searching \"CAYMUS\" finds the same bottle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:58.908Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-51fad1b57d926a73979e",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 612,
+              "column": 7
+            },
+            {
+              "title": "searching \"CaYmUs\" finds the same bottle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:58.992Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-cc20b0d162c6d4e9c73b",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 617,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-4.3: Search Empty State — No Matching Bottles",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 623,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search empty state shows message containing the search term",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.076Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-6f101d490772c84cada1",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 629,
+              "column": 7
+            },
+            {
+              "title": "search-empty message distinct from cellar-empty message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.159Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c0c2a5bc048ef206fb54",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 634,
+              "column": 7
+            },
+            {
+              "title": "\"Add bottle\" button accessible in search-empty state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.242Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-3c34a66bd892461b8cc6",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 640,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-4.4: Clear Search Restores Full List",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 647,
+          "column": 6,
+          "specs": [
+            {
+              "title": "navigating to / without query shows full list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 80,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.325Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-ab2b7e185eadeb33e4ed",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 654,
+              "column": 7
+            },
+            {
+              "title": "clearing search restores full bottle list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 112,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.409Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-13e7525e70bdb8f956cd",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 660,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-4.5: Search State Persists on Page Reload",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 669,
+          "column": 6,
+          "specs": [
+            {
+              "title": "loading /?q=caymus directly shows filtered list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.525Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dd5759977b007e131d09",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 676,
+              "column": 7
+            },
+            {
+              "title": "reloading /?q=caymus preserves filtered list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 96,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.609Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-6304b9e04dc02a432203",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 681,
+              "column": 7
+            },
+            {
+              "title": "search input pre-populated with \"caymus\" after reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 96,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.709Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-f5ebf8fd0f31bebc71f1",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 688,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.1: Health Check Endpoint",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 701,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /api/health returns 200 with {\"status\":\"ok\"}",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 50,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.809Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-7ba2101b1a598a68dd9a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 702,
+              "column": 7
+            },
+            {
+              "title": "Content-Type is application/json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 40,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-6fe4bbf2136a66e8ffbe",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 709,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.2: List All Bottles via API",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 715,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /api/bottles returns 200 with array",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.907Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c4cd91fda4981e6d8058",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 716,
+              "column": 7
+            },
+            {
+              "title": "each bottle includes required fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:02:59.958Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-5db4d00a958b73d450b8",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 723,
+              "column": 7
+            },
+            {
+              "title": "GET /api/bottles returns [] when empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.008Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-4070167a2f3c07cf47af",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 739,
+              "column": 7
+            },
+            {
+              "title": "GET /api/bottles?q=caymus returns only matching bottles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 49,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.057Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-13d6badad39d22668208",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 746,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.3: Create a Bottle via API",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 758,
+          "column": 6,
+          "specs": [
+            {
+              "title": "POST /api/bottles returns 201 with created bottle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 44,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.110Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-4f00b128fccc97e8e510",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 759,
+              "column": 7
+            },
+            {
+              "title": "POST /api/bottles without name returns 422 with error",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.157Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-2512ad595a110c8874fd",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 771,
+              "column": 7
+            },
+            {
+              "title": "POST /api/bottles with quantity=0 returns 422",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-c9cc44315c04bca4f1ef",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 780,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.4: Fetch Single Bottle via API",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 790,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /api/bottles/[id] returns 200 for existing bottle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.257Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-247982a38c65cd18cc0b",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 791,
+              "column": 7
+            },
+            {
+              "title": "GET /api/bottles/99999 returns 404 with {\"error\":\"Not found\"}",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.307Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-319179ea27ae13548e99",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 800,
+              "column": 7
+            },
+            {
+              "title": "GET /api/bottles/abc returns 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.357Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-658b22b63cf78866a549",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 807,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.5: Update a Bottle via API",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 813,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PUT /api/bottles/[id] returns 200 with updated bottle",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.408Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-baeced17c73ae88c8e12",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 814,
+              "column": 7
+            },
+            {
+              "title": "PUT with quantity=0 returns 200 (zero allowed on edit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.458Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-e4e6c41fc8e3ea5551aa",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 825,
+              "column": 7
+            },
+            {
+              "title": "PUT with quantity=-1 returns 422",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.507Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-37d136b78f8d14a2a86c",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 834,
+              "column": 7
+            },
+            {
+              "title": "PUT /api/bottles/99999 returns 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.557Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-e07f825603240e1d8b5a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 845,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-5.6: Delete a Bottle via API",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 853,
+          "column": 6,
+          "specs": [
+            {
+              "title": "DELETE /api/bottles/[id] returns 204",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.608Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-27e78e5d748033c5e16c",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 854,
+              "column": 7
+            },
+            {
+              "title": "deleted bottle no longer in GET /api/bottles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.657Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-81c506e7b8658678ccab",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 860,
+              "column": 7
+            },
+            {
+              "title": "DELETE /api/bottles/99999 returns 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-f49a0b8077cd4ed222f9",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 868,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-6.1 & US-6.2: Migration Runs Automatically",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 878,
+          "column": 6,
+          "specs": [
+            {
+              "title": "POST /api/bottles successfully inserts (confirms table exists)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.757Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dd7781c8f2b9669e963d",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 879,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-6.4: Data Persists Across Server Restarts (Page Reload)",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 889,
+          "column": 6,
+          "specs": [
+            {
+              "title": "bottle added via form appears after page reload",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.808Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-dc65375fc96cc59b666c",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 890,
+              "column": 7
+            },
+            {
+              "title": "bottle added via form appears after navigating away and back",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 163,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:00.975Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-d0a2bb87012e83754c31",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 900,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-7.1: App Usable on 375px Mobile",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 918,
+          "column": 6,
+          "specs": [
+            {
+              "title": "home page renders without horizontal scroll at 375px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 58,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.142Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-9806c39431a42ab81385",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 919,
+              "column": 7
+            },
+            {
+              "title": "/bottles/new renders without horizontal scroll at 375px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 65,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.204Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-5b5131f6d60d159bd161",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 926,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-7.2: App Readable on Desktop at 1440px",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 934,
+          "column": 6,
+          "specs": [
+            {
+              "title": "home page renders without overlapping elements at 1440px",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 68,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.272Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-9d4428417eda6622779a",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 935,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-7.3: Primary Buttons Use Gold Accent Color",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 943,
+          "column": 6,
+          "specs": [
+            {
+              "title": "submit button on add-bottle form uses #FBCA5C",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 78,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.344Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-3d8cf7e63a1b9eecd975",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 944,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-7.4: All Form Inputs Have Visible Labels",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 953,
+          "column": 6,
+          "specs": [
+            {
+              "title": "/bottles/new — every input has a visible label",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 79,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.426Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-69afe1f454cdbe38f9f0",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 954,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "US-7.5: App Loads Inside iframe Without Being Blocked",
+          "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+          "line": 964,
+          "column": 6,
+          "specs": [
+            {
+              "title": "response headers do not include X-Frame-Options: DENY",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 44,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.509Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-2b276f8f09e0803c39cc",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 965,
+              "column": 7
+            },
+            {
+              "title": "next.config.mjs file is a .mjs ESM file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-16T03:03:01.558Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de9ce1ff4932a787b1a6-15d6b78a20253c3ded07",
+              "file": "cellarlite-full-implementation-next-js-1.spec.ts",
+              "line": 971,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-16T03:02:51.704Z",
+    "duration": 9927.926,
+    "expected": 93,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
