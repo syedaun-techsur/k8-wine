@@ -1,0 +1,467 @@
+/* styles/globals.css */
+/* CellarLite — TechSur brand palette, mobile-first CSS */
+/* NO external CSS framework — plain CSS per F07-REQ-08 */
+
+/* ── Brand tokens ──────────────────────────────────────────── */
+:root {
+  --color-accent:       #FBCA5C;   /* Gold — primary buttons, focus rings, key links */
+  --color-accent-hover: #E8B540;   /* Gold darkened for hover/active */
+  --color-text:         #0A0A0A;   /* Near-black — all body and label text */
+  --color-surface:      #FFFFFF;   /* Page background, card surfaces */
+  --color-error:        #D93025;   /* Inline error text and border */
+  --color-muted:        #6B7280;   /* Secondary/metadata text */
+  --color-border:       #E5E7EB;   /* Card borders, input borders */
+  --color-destructive:  #B91C1C;   /* Delete button text */
+}
+
+/* ── Reset / base ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;  /* prevent horizontal scroll at 375px */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout container ──────────────────────────────────────── */
+/* Mobile-first: full-width base; cap at 600px on ≥640px */
+.container {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+/* ── Navigation bar — Pattern J ────────────────────────────── */
+/* Height: 56px; white bg; border-bottom; logo left, Add right */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+  .nav-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.nav-logo:hover {
+  opacity: 0.85;
+}
+
+/* Nav Add button — gold pill; min-height 36px inside 56px bar */
+.nav-add {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  min-height: 36px;
+  white-space: nowrap;
+}
+
+.nav-add:hover {
+  background: var(--color-accent-hover);
+}
+
+.nav-add:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Short label always visible; full label hidden on mobile, shown at ≥480px */
+.nav-add-full {
+  display: none;
+}
+@media (min-width: 480px) {
+  .nav-add-full {
+    display: inline;
+  }
+}
+
+/* ── Page content area ─────────────────────────────────────── */
+.page-content {
+  padding: 16px 0;
+}
+
+/* ── Search input — Pattern H ──────────────────────────────── */
+/* Always visible at top of list page; height 44px; off-white bg */
+.search-wrap {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  pointer-events: none;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.search-input {
+  width: 100%;
+  height: 44px;
+  background: #F9FAFB;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0 12px 0 36px;
+  font-size: 16px;     /* 16px critical: prevents iOS auto-zoom */
+  color: var(--color-text);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.search-input:focus {
+  outline: none;
+  border: 2px solid var(--color-accent);
+}
+
+.search-input::placeholder {
+  color: var(--color-muted);
+}
+
+/* ── Bottle list ───────────────────────────────────────────── */
+.bottle-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ── Bottle row — Pattern D ────────────────────────────────── */
+/* Block anchor; min-height 56px; two-line mobile layout */
+.bottle-row {
+  display: block;
+  min-height: 56px;
+  padding: 12px 16px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.bottle-row:hover {
+  background: #FAFAFA;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 13px;  /* compensate for 3px border */
+}
+
+.bottle-row:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.bottle-row:active {
+  background: #FFF8E7;
+}
+
+/* Bottle name — 16px bold */
+.bottle-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* Bottle metadata — 13px muted */
+.bottle-meta {
+  font-size: 13px;
+  color: var(--color-muted);
+  display: block;
+}
+
+@media (min-width: 640px) {
+  /* Desktop: inline meta right-aligned */
+  .bottle-row-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .bottle-meta {
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+/* ── Empty state (no bottles) ──────────────────────────────── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.empty-subtitle {
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 24px;
+  max-width: 260px;
+}
+
+/* ── Gold primary CTA button — Pattern A ──────────────────── */
+/* Height 48px; full-width; gold bg; near-black text */
+.btn-primary {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 48px;
+  padding: 0 16px;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.btn-primary:active {
+  background: #D4A030;
+  transform: scale(0.98);
+}
+
+.btn-primary:disabled,
+.btn-primary[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (min-width: 640px) {
+  .btn-primary.empty-cta {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* ── Search-empty state ────────────────────────────────────── */
+.search-empty {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.search-empty-msg {
+  font-size: 15px;
+  color: var(--color-muted);
+  margin-bottom: 20px;
+}
+
+/* ── Form inputs — Pattern E (used by later wave pages) ────── */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 16px;   /* critical: prevents iOS auto-zoom */
+  color: var(--color-text);
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid var(--color-accent);
+}
+
+.form-input.error {
+  border: 2px solid var(--color-error);
+}
+
+/* ── Inline error — Pattern F ──────────────────────────────── */
+.form-error {
+  font-size: 13px;
+  color: var(--color-error);
+  margin-top: 4px;
+}
+
+/* ── Error banner — Pattern G ──────────────────────────────── */
+.error-banner {
+  background: #FFF1F0;
+  border-left: 4px solid var(--color-error);
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #991B1B;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 16px;
+}
+
+/* ── Secondary / Cancel link — Pattern C ───────────────────── */
+.btn-cancel {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-muted);
+  text-decoration: none;
+  padding: 10px 16px;
+  min-height: 44px;
+  line-height: 24px;
+}
+
+.btn-cancel:hover {
+  text-decoration: underline;
+}
+
+/* ── Destructive button — Pattern B (edit page) ─────────────── */
+.btn-destructive {
+  display: block;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  border: 1px solid var(--color-destructive);
+  border-radius: 6px;
+  color: var(--color-destructive);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  line-height: 42px;
+  padding: 0 16px;
+}
+
+.btn-destructive:hover {
+  background: #FEF2F2;
+}
+
+.btn-destructive:focus-visible {
+  outline: 2px solid var(--color-destructive);
+  outline-offset: 2px;
+}
+
+.btn-destructive:active {
+  background: #FEE2E2;
+}
+
+.btn-destructive:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Divider (save/delete separator on edit page) ────────────── */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 24px 0;
+}
+
+/* ── Form page layout (add / edit pages) ─────────────────────── */
+.form-page {
+  padding: 24px 16px;
+}
+
+@media (min-width: 640px) {
+  .form-page {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+}
+
+.form-page-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+
+/* ── Responsive: Vintage + Qty side-by-side at ≥480px ───────── */
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 480px) {
+  .form-row-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
