@@ -16,7 +16,7 @@
     "project_specs": true,
     "research": true,
     "spec_docs": true,
-    "verifier": false
+    "verifier": true
   },
   "workflow_mode": "spec-express"
 }
