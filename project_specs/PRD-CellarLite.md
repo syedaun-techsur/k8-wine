@@ -302,3 +302,6 @@ Authentication, multi-user support, image uploads, tasting notes, ratings, impor
 ---
 
 *Document generated: 2026-06-13 | Next: FRD-CellarLite.md, TechArch-CellarLite.md, UserStories-CellarLite.md*
+
+
+<!-- PVC_REMOVAL_PLAN Test 12 marker: Documents-tab save via Postgres + artifact_sync -->
