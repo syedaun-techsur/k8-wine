@@ -1,17 +1,22 @@
 {
-  "security_enforcement": "block",
-  "mode": "interactive",
-  "granularity": "standard",
-  "parallelization": true,
-  "commit_docs": true,
-  "model_profile": "balanced",
-  "workflow_mode": "spec-express",
-  "workflow": {
-    "research": false,
-    "plan_check": false,
-    "verifier": false,
-    "project_specs": true
-  },
   "auto_advance": false,
-  "nyquist_validation": true
+  "branching_strategy": "none",
+  "commit_docs": true,
+  "depth": "standard",
+  "granularity": "standard",
+  "milestone_branch_template": null,
+  "mode": "interactive",
+  "model_profile": "balanced",
+  "nyquist_validation": true,
+  "parallelization": true,
+  "phase_branch_template": null,
+  "security_enforcement": "block",
+  "workflow": {
+    "plan_check": false,
+    "project_specs": true,
+    "research": true,
+    "spec_docs": true,
+    "verifier": false
+  },
+  "workflow_mode": "spec-express"
 }
