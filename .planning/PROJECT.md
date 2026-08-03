@@ -70,3 +70,6 @@ A user can instantly see their entire wine collection and make changes to it —
 
 ---
 *Last updated: 2026-06-13 after initialization*
+
+
+<!-- PVC_REMOVAL_PLAN Test 13 marker: .planning prefix round-trip -->
