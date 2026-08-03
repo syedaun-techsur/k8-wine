@@ -1,4 +1,5 @@
 {
+  "security_enforcement": "block",
   "mode": "interactive",
   "granularity": "standard",
   "parallelization": true,
