@@ -12,7 +12,7 @@
   "phase_branch_template": null,
   "security_enforcement": "block",
   "workflow": {
-    "plan_check": false,
+    "plan_check": true,
     "project_specs": true,
     "research": true,
     "spec_docs": true,
